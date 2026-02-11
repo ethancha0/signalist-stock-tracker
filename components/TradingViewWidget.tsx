@@ -19,8 +19,6 @@ function TradingViewWidget({ title, scriptUrl, config, height = 600, className }
 
 
   return (
-
-
     <div className="w-full">
         {title && <h3 className="font-semibold text-xl text-gray-100 mb-5">{title}</h3>}
         <div className={cn('tradingview-widget-container', className)}  ref={container} style={{ height: "100%", width: "100%" }}>
