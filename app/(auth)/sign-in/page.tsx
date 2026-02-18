@@ -41,20 +41,16 @@ const onSubmit = async (data: SignInFormData) =>{
       
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5"> 
           <InputField
-              name="username"
+              name="email"
               label="Email"
               placeholder="jdoe@uci.edu"
               register={register}
-             // error={errors.fullName}
-             // validation={{ required: 'email is invalid', minLength: 2}}
           />
           <InputField
               name="password"
               label="Password"
               placeholder=""
               register={register}
-             // error={errors.fullName}
-              //validation={{ required: 'password is invalid', minLength: 2}}
           />
 
           <Button type="submit" className="yellow-btn w-full mt-5">
