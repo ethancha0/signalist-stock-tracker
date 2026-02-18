@@ -1,5 +1,6 @@
 "use client";
 
+import FooterLink from "@/components/forms/FooterLink";
 import InputField from "@/components/forms/InputField";
 import { Button } from "@/components/ui/button";
 import {useForm} from "react-hook-form";
@@ -36,7 +37,7 @@ const onSubmit = async (data: SignInFormData) =>{
 
   return (
     <div>
-        <h1 className="form-title">Sign in</h1>
+        <h1 className="form-title">Welcome Back</h1>
       
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5"> 
           <InputField
@@ -64,6 +65,12 @@ const onSubmit = async (data: SignInFormData) =>{
 
         </form>
 
+        <FooterLink
+        text="Don't have an Account? "
+        linkText="Create One"
+        href={"/sign-up"}
+        
+        />
 
 
     </div>
